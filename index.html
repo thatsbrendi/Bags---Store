@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Bags & Store</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <a href="#" class="logo">Bags & Store</a>
+        <ul class="nav-menu">
+            <li><a href="#" class="nav-link active">Home</a></li>
+            <li><a href="#" class="nav-link">Products</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Blogs</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="icons-nav">
+            <i class='far fa-heart' id="cart-heart"></i>
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+        </div>
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <button type="button" class="btn-buy">Buy Now</button>
+            <i class='bx bx-x' id="close-cart"></i>
+        </div>
+    </header>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="text-inside-img">
+                <p class="p-1">Special Offer</p>
+                <h3 class="p-2">The Bag</h3>
+                <button>Shop now</button>
+            </div>
+            <img src="image/slide-1.jpg" alt="slide-1">
+        </div>
+        <div class="mySlides fade">
+            <div class="text-inside-img">
+                <p class="p-1">Bag Fashion</p>
+                <h3 class="p-2">Save 50%</h3>
+                <button>Shop now</button>
+            </div>
+            <img src="image/slide-2.jpg" alt="slide-2">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <!-- Shop -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <img src="image/product1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Zip Closure Handbag</h2>
+                <span class="price">55 €</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box">
+                <img src="image/product2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Pink Mammon Handbag</h2>
+                <span class="price">70 €</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box">
+                <img src="image/product3.jpg" alt="" class="product-img">
+                <h2 class="product-title">Silver Space Handbag</h2>
+                <span class="price">120 €</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box">
+                <img src="image/product4.jpg" alt="" class="product-img">
+                <h2 class="product-title">Color Beads Travel Bag</h2>
+                <span class="price">90 €</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box">
+                <img src="image/product5.jpg" alt="" class="product-img">
+                <h2 class="product-title">Cream Plaid Wristlet</h2>
+                <span class="price">64.99 €</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box">
+                <img src="image/product6.jpg" alt="" class="product-img">
+                <h2 class="product-title">Wood Plait Wristlet</h2>
+                <span class="price">59.99 €</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box">
+                <img src="image/product7.jpg" alt="" class="product-img">
+                <h2 class="product-title">Black Plait Wristlet</h2>
+                <span class="price">70 €</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box">
+                <img src="image/product8.jpg" alt="" class="product-img">
+                <h2 class="product-title">Nature Motif Wristlet</h2>
+                <span class="price">49.99 €</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Content Footer -->
+        <div class="content-footer">
+            <!-- Footer box -->
+            <div class="footer-box">
+                <!-- title Logo -->
+                <h2 class="title-logo">Bags & Store</h2>
+                <p>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.
+                </p>
+                <p>Call us: 041 096 257 14</p>
+                <!-- They are social icons -->
+                <i class='fab fa-facebook-f'></i>
+                <i class='fab fa-instagram'></i>
+                <i class='fab fa-twitter'></i>
+                <i class='fab fa-whatsapp'></i>
+            </div>
+            <!-- Footer box -->
+            <div class="footer-box">
+                <h3 class="text-bg-dark">Information</h3>
+                <p>Delivery</p>
+                <p>About us</p>
+                <p>Secure payment</p>
+                <p>Contact us</p>
+                <p>Sitemap</p>
+            </div>
+            <!-- Footer box -->
+            <div class="footer-box">
+                <h3 class="text-bg-dark">Custom Links</h3>
+                <p>Prices drop</p>
+                <p>New products</p>
+                <p>Best sales</p>
+                <p>My account</p>
+                <p>Terms and conditions</p>
+            </div>
+            <!-- Footer box -->
+            <div class="footer-box">
+                <h3 class="text-bg-dark">My Account</h3>
+                <p>My Orders</p>
+                <p>My Addresses</p>
+                <p>My Personal Info</p>
+                <p>Return Policy</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Link TO JS -->
+    <script src="scirpt.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
